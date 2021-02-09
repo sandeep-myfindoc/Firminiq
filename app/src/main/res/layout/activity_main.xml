@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+<data>
+
+</data>
+    <ScrollView
+        android:background="@color/color_app_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_signup_screen"
+            android:paddingTop="@dimen/padding_top_signup_screen"
+            android:paddingRight="@dimen/padding_signup_screen"
+            tools:context=".view.signup.SignupActivity">
+
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_screen"
+                android:textColor="@color/color_label_heading"
+                android:textStyle="bold"
+                android:textSize="@dimen/extra_large_text_size" />
+            <!-- Email -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="@dimen/margin_field"
+                android:layout_marginBottom="@dimen/margin_field"
+                android:id="@+id/edEmailLayout"
+                app:errorEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:maxLength="25"
+                    android:imeOptions="actionNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/edEmail"
+                    android:hint="@string/hint_email"
+                    android:singleLine="true"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <!-- Password -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginBottom="@dimen/margin_field"
+                android:id="@+id/edPasswordLayout"
+                app:errorEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:imeOptions="actionNext"
+                    android:maxLength="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/edPassword"
+                    android:hint="@string/hint_password"
+                    android:singleLine="true"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Confirm  Password -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginBottom="@dimen/margin_field"
+                android:id="@+id/edConfirmPasswordLayout"
+                app:errorEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:imeOptions="actionDone"
+                    android:maxLength="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/edConfirmPassword"
+                    android:hint="@string/hint_confirmPassword"
+                    android:singleLine="true"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/btnSubmit"
+                style="@style/button"
+                android:layout_marginTop="@dimen/margin_btn_submit"
+                android:gravity="center"
+                android:clickable="true"
+                android:text="@string/btn_submit" />
+        </LinearLayout>
+    </ScrollView>
+</layout>

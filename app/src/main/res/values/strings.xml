@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FinniqmachineTest</string>
+    <string name="title_toolbar">Sign Up</string>
+    <string name="title_screen">Sign Up</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirmPassword">Confirm Password</string>
+    <string name="btn_submit">Submit</string>
+    <string name="error_email">Please enter the email.</string>
+    <string name="error_wrong_email">Please enter correct email</string>
+    <string name="error_password">Please enter the password.</string>
+    <string name="error_confirmPassword">Please enter the confirm password.</string>
+    <string name="error_passwordMisMatch">Password did not match with confirm password</string>
+</resources>
